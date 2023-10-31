@@ -1,9 +1,104 @@
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex: 1 1;
 }
 
 body{
     margin:0;
     padding:0;
+}
+
+.logo{
+    width: 5%;
+    height: auto;
+}
+
+header a{
+    text-decoration: none;
+    padding-top: 1%;
+}
+
+#main {
+    float: left;
+    background-color: #f6f6f6;
+    border-top: 2px solid silver;
+    color: #484848;
+    font-size: 1.3em;
+    padding-left: 20%;
+}
+
+#main div {
+    width: 48%;
+    margin-right: 2%;
+    float: left;
+}
+
+#main h2 {font-size: 3em}
+#main span {color: #a0a0a0}
+
+#information {
+    width: 100%;
+    background-image: url(https://360travel.by/images/gallery/hotels/2285/20922600.jpg);
+    background-blend-mode: multiply;
+    background-color: #2e3a44;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+#information h1{
+    font-size: 100px;
+    padding-top:25%;
+    margin: 0 ;
+}
+
+#information h2{
+    
+    padding-bottom: 25%;
+}
+
+
+
+#overview {
+    float: left;
+    background-image: url(https://www.momondo.com/himg/08/21/f5/leonardo-2684146-Exterior_O-202639.jpg);
+
+    background-blend-mode: multiply;
+    background-color: #403f40;
+    background-size: cover;
+    background-attachment: fixed;
+
+    padding: 100px 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+}
+
+#overview h2 {font-size: 4em}
+
+#overview h4 {color: #ccc; font-size: 1.5em}
+
+#overview .img {
+    float: left;
+    width: 30%;
+    margin-top: 50px;
+    margin-left: 2%;
+}
+
+#overview img {
+    background: #fafafa;
+    padding: 5px;
+    border: 2px solid silver;
+    float: left;
+    width: 100%;
+    max-width: 500px;
+}
+
+#overview span {
+    float: left;
+    width: 100%;
+    font-size: 2em;
+    margin-top: 10px;
 }
