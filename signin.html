@@ -8,22 +8,121 @@
 </head>
 <body>
     <header>
-        <a href="index.html">Главная страница</a>      
-        <a href="signin.html">Вход</a>
-        <a href="contacts.html">Контакты</a> 
-    </header>
+        <div class="container">
+        <div class="header-bar">
+            <h1 class="logo">EKland</h1>
+            <ul class="slider-menu">
+                <li><a href="index.html">Главная страница</a></li>
+                <li><a href="signin.html">Вход/Регистрация</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
     <main>
-<fieldset>
-    <legend>Войдите</legend>
-<form>
-    <label for="email">Введите почту</label>
-    <input type="email" id="email"> <br>
-    <label for="pass">Введите пароль</label>
-    <input type="password" id="pass">
-</form>
-</fieldset>
-<input type="submit" value="Войти">
-<a href="signup.html">Еще нет аккаунта? Зарегистрируйтесь!</a>
+<div class="cotn_principal">
+    <div class="cont_centrar">
+    
+      <div class="cont_login">
+    <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+    <div class="cont_ba_opcitiy">
+            
+            <h2>ВОЙДИТЕ В АККАУНТ</h2>  
+      <p>Если вы уже зарегистрировались, войдите в аккаунт</p> 
+      <button class="btn_login" onclick="cambiar_login()">ВОЙТИ</button>
+      </div>
+      </div>
+    <div class="col_md_sign_up">
+    <div class="cont_ba_opcitiy">
+      <h2>ЗАРЕГИСТРИРУЙТЕ АККАУНТ</h2>
+    
+      
+      <p>Если вы еще не зарегистрировались, зарегистрируйте аккаунт</p>
+    
+      <button class="btn_sign_up" onclick="cambiar_sign_up()">ЗАРЕГИСТРИРОВАТЬ</button>
+    </div>
+      </div>
+           </div>
+    
+        
+        <div class="cont_back_info">
+           <div class="cont_img_back_grey">
+           <img src="https://www.momondo.com/himg/08/21/f5/leonardo-2684146-Exterior_O-202639.jpg" alt="" />
+           </div>
+           
+        </div>
+    <div class="cont_forms" >
+        <div class="cont_img_back_">
+           <img src="https://www.momondo.com/himg/08/21/f5/leonardo-2684146-Exterior_O-202639.jpg" alt="" />
+           </div>
+     <div class="cont_form_login">
+    <a href="#" onclick="ocultar_login_sign_up()" ><i class="material-icons">&#xE5C4;</i></a>
+       <h2>ВОЙТИ В АККАУНТ</h2>
+     <input type="text" placeholder="Введите Email" />
+    <input type="password" placeholder="Введите пароль" />
+    <button class="btn_login" onclick="cambiar_login()">Войти</button>
+      </div>
+      
+       <div class="cont_form_sign_up">
+    <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+         <h2>ЗАРЕГИСТРИРУЙТЕ АККАУНТ</h2>
+    <input type="text" placeholder="Введите Email" />
+    <input type="text" placeholder="Введите ФИО" />
+    <input type="password" placeholder="Введите пароль" />
+    <input type="password" placeholder="Подтвердите пароль" />
+    <button class="btn_sign_up" onclick="cambiar_sign_up()">Зарегистрировать</button>
+    
+      </div>
+    
+        </div>
+        
+      </div>
+     </div>
+    </div>
+      
+        <script>
+            function cambiar_login() {
+    document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_login";  
+  document.querySelector('.cont_form_login').style.display = "block";
+  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+  
+  setTimeout(function(){  document.querySelector('.cont_form_login').style.opacity = "1"; },400);  
+    
+  setTimeout(function(){    
+  document.querySelector('.cont_form_sign_up').style.display = "none";
+  },200);  
+    }
+  
+  function cambiar_sign_up(at) {
+    document.querySelector('.cont_forms').className = "cont_forms cont_forms_active_sign_up";
+    document.querySelector('.cont_form_sign_up').style.display = "block";
+  document.querySelector('.cont_form_login').style.opacity = "0";
+    
+  setTimeout(function(){  document.querySelector('.cont_form_sign_up').style.opacity = "1";
+  },100);  
+  
+  setTimeout(function(){   document.querySelector('.cont_form_login').style.display = "none";
+  },400);  
+  
+  
+  }    
+  
+  
+  
+  function ocultar_login_sign_up() {
+  
+  document.querySelector('.cont_forms').className = "cont_forms";  
+  document.querySelector('.cont_form_sign_up').style.opacity = "0";               
+  document.querySelector('.cont_form_login').style.opacity = "0"; 
+  
+  setTimeout(function(){
+  document.querySelector('.cont_form_sign_up').style.display = "none";
+  document.querySelector('.cont_form_login').style.display = "none";
+  },500);  
+    
+    }
+        </script>
     </main>
 </body>
 </html>
