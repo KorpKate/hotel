@@ -437,7 +437,7 @@ body{
 header {
 	height: 100%;
 	margin: 0;
-	background: linear-gradient(90deg, rgba(130,206,252,1) 0%, rgba(79,135,240,1) 44%, rgba(0,73,255,1) 100%);
+	background: linear-gradient(90deg, rgb(24, 69, 97) 0%, rgba(23,68,100) 44%, rgba(22,65,103) 100%);
 }
 header a{
     text-decoration: none;
